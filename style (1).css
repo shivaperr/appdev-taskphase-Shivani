@@ -1,0 +1,117 @@
+/* ---------- Reset & base ---------- */
+* {
+  box-sizing: border-box;   /* padding and border are included in an element's width */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f5f7fa;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;           /* centres the content */
+  padding: 40px 20px;
+}
+
+section {
+  margin-bottom: 48px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #3b6ef5;
+  display: inline-block;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  background-color: #1e2a4a;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.site-header h1 {
+  font-size: 2.6rem;
+  margin-bottom: 8px;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #c8d3f0;
+}
+
+/* ---------- About ---------- */
+.about p {
+  max-width: 700px;
+}
+
+/* ---------- Projects (Flexbox) ---------- */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;          /* cards drop to the next row on small screens */
+  gap: 24px;
+}
+
+.card {
+  flex: 1 1 260px;          /* grow, shrink, and a base width of 260px */
+  background-color: #fff;
+  border: 1px solid #dde3ee;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+  margin: 14px 0 6px;
+  font-size: 1.15rem;
+}
+
+.card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.image-placeholder {
+  height: 160px;
+  background-color: #dde3ee;
+  color: #7a859e;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;      /* vertical centring */
+  justify-content: center;  /* horizontal centring */
+  font-weight: bold;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background-color: #1e2a4a;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.contact-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 10px;
+}
+
+.contact-links a {
+  color: #9db8ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
